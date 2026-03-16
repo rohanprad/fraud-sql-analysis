@@ -8,7 +8,6 @@ IEEE-CIS Fraud Detection dataset (~590,000 transactions).
 - What is the overall fraud rate and how is it distributed?
 - Which transaction types, card types, and amounts carry the highest fraud risk?
 - Can we identify patterns in fraudulent behaviour by time, device, and email domain?
-- Can we build a rule-based risk scoring model purely in SQL?
 
 ## Dataset
 - Source: [IEEE-CIS Fraud Detection](https://www.kaggle.com/c/ieee-fraud-detection)
