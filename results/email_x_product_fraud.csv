@@ -1,0 +1,17 @@
+email_domain,ProductCD,total_txns,fraud_txns,fraud_rate_pct,avg_txn_amt
+mail.com,R,24,13,54.17,234.38
+mail.com,H,45,18,40.0,151.78
+outlook.com,R,256,55,21.48,178.71
+mail.com,C,52,9,17.31,34.12
+outlook.com,C,2026,348,17.18,35.63
+mail.com,W,438,66,15.07,168.66
+aim.com,W,268,39,14.55,136.97
+outlook.com,H,168,23,13.69,76.62
+outlook.es,C,432,57,13.19,40.48
+hotmail.com,C,23952,1958,8.17,42.98
+hotmail.com,H,2437,154,6.32,65.42
+aim.com,R,23,1,4.35,119.57
+outlook.com,W,2646,56,2.12,168.07
+hotmail.com,W,16985,256,1.51,180.06
+hotmail.com,R,1876,28,1.49,146.44
+aim.com,H,20,0,0.0,41.0
