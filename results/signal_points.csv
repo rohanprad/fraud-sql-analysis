@@ -1,0 +1,46 @@
+signal,value,points,lift,fraud_rate_pct,train_txns
+product,C,3,3.21,11.26,52587
+device,mobile,3,2.81,9.85,43225
+email_domain,outlook.com,3,2.64,9.24,3746
+amount,1_<$10,2,2.35,8.23,4630
+card_type,credit,2,1.9,6.66,114033
+time,overnight,2,1.77,6.21,25412
+device,desktop,2,1.75,6.12,68174
+product,S,2,1.75,6.12,7533
+velocity_24h,3-5 previous,2,1.55,5.44,18846
+email_domain,hotmail.com,2,1.51,5.3,34559
+amount,4_$200-1000,1,1.37,4.79,69821
+velocity_24h,6+ previous,1,1.35,4.72,9149
+product,H,1,1.31,4.6,28733
+email_domain,gmail.com,1,1.25,4.39,168970
+velocity_24h,1-2 previous,0,1.16,4.08,71518
+amount,2_$10-50,0,1.09,3.83,133300
+product,R,0,1.03,3.6,30917
+email_domain,live.com,0,0.97,3.41,2315
+time,daytime,0,0.95,3.34,412099
+email_domain,icloud.com,0,0.89,3.11,4635
+email_domain,missing,0,0.85,2.99,67980
+card_type,unknown,0,0.83,2.9,828
+email_domain,bellsouth.net,0,0.83,2.92,1472
+card_testing,no,0,0.81,2.83,229241
+amount,3_$50-200,0,0.81,2.85,224378
+email_domain,live.com.mx,-1,0.79,2.76,580
+email_domain,comcast.net,-1,0.69,2.41,6055
+card_type,debit,-1,0.68,2.39,322605
+amount,5_$1000+,-1,0.67,2.36,5382
+email_domain,yahoo.com,-1,0.66,2.32,74763
+email_domain,anonymous.com,-1,0.66,2.31,28059
+email_domain,ymail.com,-1,0.63,2.2,1773
+device,no device data,-1,0.6,2.12,326112
+email_domain,aol.com,-1,0.6,2.12,20888
+product,W,-1,0.59,2.05,317741
+velocity_24h,0 previous,-1,0.52,1.84,287731
+email_domain,charter.net,-1,0.52,1.82,660
+email_domain,cox.net,-1,0.52,1.81,1050
+email_domain,msn.com,-1,0.45,1.58,3110
+email_domain,me.com,-1,0.36,1.25,1199
+email_domain,yahoo.com.mx,-1,0.36,1.25,1199
+email_domain,optonline.net,-1,0.25,0.89,789
+email_domain,verizon.net,-1,0.16,0.57,2099
+email_domain,sbcglobal.net,-1,0.14,0.49,2241
+email_domain,att.net,-1,0.14,0.49,2879

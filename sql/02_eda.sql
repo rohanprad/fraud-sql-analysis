@@ -9,7 +9,7 @@ SELECT
   isFraud,
   COUNT(*) AS transaction_count,
   ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER(), 2) AS pct_of_total
-FROM `fraud_analysis.transactions`
+FROM `glass-timing-490318-d7.fraud_analysis.transactions`
 GROUP BY isFraud;
 
 -- 2. Transaction amount distribution
@@ -24,7 +24,7 @@ SELECT
   COUNT(*) AS txn_count,
   SUM(isFraud) AS fraud_count,
   ROUND(AVG(isFraud) * 100, 2) AS fraud_rate_pct
-FROM `fraud_analysis.transactions`
+FROM `glass-timing-490318-d7.fraud_analysis.transactions`
 GROUP BY amount_bucket
 ORDER BY amount_bucket;
 
@@ -35,7 +35,7 @@ SELECT
   COUNT(*) AS total_txns,
   SUM(isFraud) AS fraud_txns,
   ROUND(AVG(isFraud) * 100, 2) AS fraud_rate_pct
-FROM `fraud_analysis.transactions`
+FROM `glass-timing-490318-d7.fraud_analysis.transactions`
 WHERE card4 IS NOT NULL
   AND card6 IS NOT NULL
 GROUP BY card4, card6
@@ -48,7 +48,7 @@ SELECT
   SUM(isFraud) AS fraud_txns,
   ROUND(AVG(isFraud) * 100, 2) AS fraud_rate_pct,
   ROUND(AVG(TransactionAmt), 2) AS avg_txn_amt
-FROM `fraud_analysis.transactions`
+FROM `glass-timing-490318-d7.fraud_analysis.transactions`
 GROUP BY ProductCD
 ORDER BY fraud_rate_pct DESC;
 
@@ -59,7 +59,7 @@ SELECT
   SUM(isFraud) AS fraud_txns,
   ROUND(AVG(isFraud) * 100, 2) AS fraud_rate_pct,
   ROUND(AVG(TransactionAmt), 2) AS avg_txn_amt
-FROM `fraud_analysis.transactions`
+FROM `glass-timing-490318-d7.fraud_analysis.transactions`
 WHERE P_emaildomain IS NOT NULL
 GROUP BY P_emaildomain
 HAVING COUNT(*) > 100
@@ -73,8 +73,8 @@ SELECT
   SUM(t.isFraud) AS fraud_txns,
   ROUND(AVG(t.isFraud) * 100, 2) AS fraud_rate_pct,
   ROUND(AVG(t.TransactionAmt), 2) AS avg_txn_amt
-FROM `fraud_analysis.transactions` t
-LEFT JOIN `fraud_analysis.identity` i
+FROM `glass-timing-490318-d7.fraud_analysis.transactions` t
+LEFT JOIN `glass-timing-490318-d7.fraud_analysis.identity` i
   ON t.TransactionID = i.TransactionID
 WHERE i.DeviceType IS NOT NULL
 GROUP BY i.DeviceType
@@ -89,4 +89,4 @@ SELECT
   COUNTIF(card6 IS NULL)           AS missing_card6,
   COUNTIF(P_emaildomain IS NULL)   AS missing_email,
   COUNTIF(ProductCD IS NULL)       AS missing_product
-FROM `fraud_analysis.transactions`;
+FROM `glass-timing-490318-d7.fraud_analysis.transactions`;

@@ -1,0 +1,19 @@
+# Personal working notes
+docs/plain_english_guide.md
+_private/
+
+# Raw data must not be redistributed (Kaggle competition licence)
+*.csv.zip
+data/raw/
+train_*.csv
+test_*.csv
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini

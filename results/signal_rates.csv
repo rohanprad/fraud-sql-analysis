@@ -1,0 +1,46 @@
+signal,value,train_txns,train_fraud,fraud_rate_pct,lift
+amount,1_<$10,4630,381,8.23,2.35
+amount,4_$200-1000,69821,3343,4.79,1.37
+amount,2_$10-50,133300,5100,3.83,1.09
+amount,3_$50-200,224378,6385,2.85,0.81
+amount,5_$1000+,5382,127,2.36,0.67
+card_testing,no,229241,6483,2.83,0.81
+card_type,credit,114033,7593,6.66,1.9
+card_type,unknown,828,24,2.9,0.83
+card_type,debit,322605,7719,2.39,0.68
+device,mobile,43225,4259,9.85,2.81
+device,desktop,68174,4173,6.12,1.75
+device,no device data,326112,6904,2.12,0.6
+email_domain,outlook.com,3746,346,9.24,2.64
+email_domain,hotmail.com,34559,1832,5.3,1.51
+email_domain,gmail.com,168970,7423,4.39,1.25
+email_domain,live.com,2315,79,3.41,0.97
+email_domain,icloud.com,4635,144,3.11,0.89
+email_domain,missing,67980,2030,2.99,0.85
+email_domain,bellsouth.net,1472,43,2.92,0.83
+email_domain,live.com.mx,580,16,2.76,0.79
+email_domain,comcast.net,6055,146,2.41,0.69
+email_domain,yahoo.com,74763,1731,2.32,0.66
+email_domain,anonymous.com,28059,648,2.31,0.66
+email_domain,ymail.com,1773,39,2.2,0.63
+email_domain,aol.com,20888,442,2.12,0.6
+email_domain,charter.net,660,12,1.82,0.52
+email_domain,cox.net,1050,19,1.81,0.52
+email_domain,msn.com,3110,49,1.58,0.45
+email_domain,yahoo.com.mx,1199,15,1.25,0.36
+email_domain,me.com,1199,15,1.25,0.36
+email_domain,optonline.net,789,7,0.89,0.25
+email_domain,verizon.net,2099,12,0.57,0.16
+email_domain,sbcglobal.net,2241,11,0.49,0.14
+email_domain,att.net,2879,14,0.49,0.14
+product,C,52587,5920,11.26,3.21
+product,S,7533,461,6.12,1.75
+product,H,28733,1323,4.6,1.31
+product,R,30917,1112,3.6,1.03
+product,W,317741,6520,2.05,0.59
+time,overnight,25412,1577,6.21,1.77
+time,daytime,412099,13759,3.34,0.95
+velocity_24h,3-5 previous,18846,1025,5.44,1.55
+velocity_24h,6+ previous,9149,432,4.72,1.35
+velocity_24h,1-2 previous,71518,2918,4.08,1.16
+velocity_24h,0 previous,287731,5288,1.84,0.52
